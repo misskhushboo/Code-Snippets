@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_gradient" >
+    </LinearLayout>
+   <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_header"
+        android:layout_below="@+id/linearLayout1"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:gravity="center_horizontal"
+        android:background="@color/light_grey"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
+	<!-- You can set the height of the webview to avoid showing black bar at the bottom of the screen -->
+   <WebView
+       android:id="@+id/webView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/header"
+       android:layout_centerHorizontal="true"
+       
+     />
+
+</RelativeLayout>

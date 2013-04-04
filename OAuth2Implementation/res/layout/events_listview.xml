@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_gradient" >
+    </LinearLayout>
+   <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_header"
+        android:layout_below="@+id/linearLayout1"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:gravity="center_horizontal"
+        android:background="@color/light_grey"
+        android:padding="5dp"/>
+    <ListView
+        android:id="@+id/mainlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+        android:layout_above="@+id/insert_event_btn"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+    </ListView>
+
+	<Button
+	    android:id="@+id/insert_event_btn"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/insert_event"
+	    android:layout_marginBottom="20dp"
+	    android:onClick="insert_event_btn_clicked"
+	    />
+	
+</RelativeLayout>

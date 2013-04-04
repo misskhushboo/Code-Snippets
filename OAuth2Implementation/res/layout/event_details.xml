@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+     android:background="@android:color/background_light"
+    
+   >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Event Detail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" 
+        android:background="@android:color/background_light"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content" >
+            <TextView
+           
+            android:text="Event Creator :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row1"
+            android:text="A"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content" >
+            <TextView
+           
+            android:text="Event Location :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row2"
+            android:text="B"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content" >
+            <TextView
+            
+            android:text="Event Start Time :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row3"
+            android:text="C"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content" >
+            <TextView
+           
+            android:text="Event End Time :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row4"
+            android:text="D"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content" >
+            <TextView
+            
+            android:text="Event Organizer :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row5"
+            android:text="E"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content" >
+            <TextView
+           
+            android:text="Event Attendees :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginRight="3dp" />
+            <TextView
+            android:id="@+id/row6"
+            
+            android:text="F"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="3dp" />
+        </TableRow>
+    </TableLayout>
+
+    
+
+</RelativeLayout>
